@@ -55,6 +55,5 @@ def main():
                 model = pickle.load(f)
             prediction = model.predict(feature_data)
             image_sel(prediction[0])
-if __name__=='__main__':
-    main()
+main()
 
