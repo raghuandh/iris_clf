@@ -3,11 +3,7 @@ import pickle
 from PIL import Image
 
 
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.svm import SVM
-from sklearn.linear_model import LinearRegression
+
 
 def image_sel(output):
     setosa = 'images/setosa.png'
