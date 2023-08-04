@@ -41,7 +41,7 @@ if predict_but:
             model = pickle.load(f)
         prediction = model.predict(feature_data)
         image_sel(prediction[0])
-     elif sel_model=='KNN':
+    elif sel_model=='KNN':
         with open('models/DTC.pickle', 'rb') as f:
             model = pickle.load(f)
         prediction = model.predict(feature_data)
