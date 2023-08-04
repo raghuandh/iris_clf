@@ -40,21 +40,21 @@ if predict_but:
         with open('models/DTC.pickle', 'rb') as f:
             model2 = pickle.load(f)
         prediction2 = model2.predict(feature_data)
-        image_sel(prediction[0])
+        image_sel(prediction2[0])
     elif sel_model=='KNN':
         with open('models/DTC.pickle', 'rb') as f:
             model3 = pickle.load(f)
         prediction3 = model3.predict(feature_data)
-        image_sel(prediction[0])
+        image_sel(prediction3[0])
     elif sel_model=='Logistic Regression':
         with open('models/DTC.pickle', 'rb') as f:
             model4 = pickle.load(f)
         prediction4 = model4.predict(feature_data)
-        image_sel(prediction[0])
+        image_sel(prediction4[0])
     else:
         with open('models/RFC.pickle','rb') as f:
             model5 = pickle.load(f)
         prediction5 = model5.predict(feature_data)
-        image_sel(prediction[0])
+        image_sel(prediction5[0])
 
 
