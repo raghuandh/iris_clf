@@ -3,7 +3,7 @@ import pickle
 from PIL import Image
 
 
-from sklearn.linear_model import LinearRegression
+
 def image_sel(output):
     setosa = 'images/setosa.png'
     versicolor = 'images/versicolor.png'
