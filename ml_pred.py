@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 from PIL import Image
-import cv2
+
 
 
 def image_sel(output):
