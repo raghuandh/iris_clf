@@ -3,7 +3,7 @@ import pickle
 from PIL import Image
 
 
-
+import sklearn
 
 def image_sel(output):
     setosa = 'images/setosa.png'
