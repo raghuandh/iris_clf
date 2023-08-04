@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 from PIL import Image
 
-from streamlit.report_thread import get_report_ctx
+
 import sklearn
 
 def image_sel(output):
