@@ -33,28 +33,28 @@ if predict_but:
         st.write('Please Select Model')
     elif sel_model=='SVM classifier':
          with open('models/SVM.pickle','rb') as f:
-            model = pickle.load(f)
-        prediction = model.predict(feature_data)
+            model1 = pickle.load(f)
+        prediction1 = model1.predict(feature_data)
         image_sel(prediction[0])
     elif sel_model=='Decision Tree':
         with open('models/DTC.pickle', 'rb') as f:
-            model = pickle.load(f)
-        prediction = model.predict(feature_data)
+            model2 = pickle.load(f)
+        prediction2 = model2.predict(feature_data)
         image_sel(prediction[0])
     elif sel_model=='KNN':
         with open('models/DTC.pickle', 'rb') as f:
-            model = pickle.load(f)
-        prediction = model.predict(feature_data)
+            model3 = pickle.load(f)
+        prediction3 = model3.predict(feature_data)
         image_sel(prediction[0])
     elif sel_model=='Logistic Regression':
         with open('models/DTC.pickle', 'rb') as f:
-            model = pickle.load(f)
-        prediction = model.predict(feature_data)
+            model4 = pickle.load(f)
+        prediction4 = model4.predict(feature_data)
         image_sel(prediction[0])
     else:
         with open('models/RFC.pickle','rb') as f:
-            model = pickle.load(f)
-        prediction = model.predict(feature_data)
+            model5 = pickle.load(f)
+        prediction5 = model5.predict(feature_data)
         image_sel(prediction[0])
 
 
