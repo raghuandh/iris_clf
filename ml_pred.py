@@ -37,24 +37,24 @@ if predict_but:
         prediction = model.predict(feature_data)
         image_sel(prediction[0])
     elif sel_model=='Decision Tree':
-            with open('models/DTC.pickle', 'rb') as f:
-                model = pickle.load(f)
-            prediction = model.predict(feature_data)
-            image_sel(prediction[0])
+        with open('models/DTC.pickle', 'rb') as f:
+            model = pickle.load(f)
+        prediction = model.predict(feature_data)
+        image_sel(prediction[0])
      elif sel_model=='KNN':
-            with open('models/DTC.pickle', 'rb') as f:
-                model = pickle.load(f)
-            prediction = model.predict(feature_data)
-            image_sel(prediction[0])
+        with open('models/DTC.pickle', 'rb') as f:
+            model = pickle.load(f)
+        prediction = model.predict(feature_data)
+        image_sel(prediction[0])
     elif sel_model=='Logistic Regression':
-            with open('models/DTC.pickle', 'rb') as f:
-                model = pickle.load(f)
-            prediction = model.predict(feature_data)
-            image_sel(prediction[0])
+        with open('models/DTC.pickle', 'rb') as f:
+            model = pickle.load(f)
+        prediction = model.predict(feature_data)
+        image_sel(prediction[0])
     else:
-            with open('models/RFC.pickle','rb') as f:
-                model = pickle.load(f)
-            prediction = model.predict(feature_data)
-            image_sel(prediction[0])
+        with open('models/RFC.pickle','rb') as f:
+            model = pickle.load(f)
+        prediction = model.predict(feature_data)
+        image_sel(prediction[0])
 
 
