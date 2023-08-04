@@ -2,7 +2,7 @@ import streamlit as st
 import pickle
 from PIL import Image
 
-import sklearn
+
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
