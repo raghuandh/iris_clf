@@ -32,10 +32,11 @@ if predict_but:
     if sel_model=='':
         st.write('Please Select Model')
     elif sel_model=='SVM classifier':
-         with open('models/SVM.pickle','rb') as f:
+        with open('models/SVM.pickle','rb') as f:
             model1 = pickle.load(f)
-        prediction1 = model1.predict(feature_data)
+        prediction = model1.predict(feature_data)
         image_sel(prediction[0])
+         
     elif sel_model=='Decision Tree':
         with open('models/DTC.pickle', 'rb') as f:
             model2 = pickle.load(f)
